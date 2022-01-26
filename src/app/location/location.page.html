@@ -1,9 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Location</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title>Find your camp</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="confirmSetLocation()">
+        <ion-icon slot="icon-only" name="flag"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="takeMeHome()">
+        <ion-icon slot="icon-only" name="compass"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <!-- google map component will be placed here later -->
 </ion-content>

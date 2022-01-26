@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>CampDetails</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title><img src="assets/images/logo.png" alt="CampMate" /></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <ion-list lines="none">
+    <ion-item>
+      <ion-label postition="stacked">Gate Access Code</ion-label>
+      <ion-input type="text" clearInput></ion-input>
+    </ion-item>
 
+    <ion-item>
+      <ion-label postition="stacked">Ammenities Code</ion-label>
+      <ion-input type="text" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label postition="stacked">WiFi Password</ion-label>
+      <ion-input type="text" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label postition="stacked">Phone Number</ion-label>
+      <ion-input type="number" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label postition="stacked">Departure Date</ion-label>
+      <ion-datetime display-format="MM/DD/YYYY"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label postition="stacked">Notes</ion-label>
+      <ion-textarea [autoGrow]="true" rows="10" type="text"></ion-textarea>
+    </ion-item>
+  </ion-list>
 </ion-content>
