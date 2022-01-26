@@ -5,35 +5,61 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-list lines="none">
-    <ion-item>
-      <ion-label postition="stacked">Gate Access Code</ion-label>
-      <ion-input type="text" clearInput></ion-input>
-    </ion-item>
+  <form [formGroup]="campDetailsForm">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label postition="stacked">Gate Access Code</ion-label>
+        <ion-input
+          type="text"
+          clearInput
+          formControlName="gateAccessCode"
+        ></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label postition="stacked">Ammenities Code</ion-label>
-      <ion-input type="text" clearInput></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label postition="stacked">Ammenities Code</ion-label>
+        <ion-input
+          type="text"
+          clearInput
+          formControlName="ammenitiesCode"
+        ></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label postition="stacked">WiFi Password</ion-label>
-      <ion-input type="text" clearInput></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label postition="stacked">WiFi Password</ion-label>
+        <ion-input
+          type="text"
+          clearInput
+          formControlName="wifiPassword"
+        ></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label postition="stacked">Phone Number</ion-label>
-      <ion-input type="number" clearInput></ion-input>
-    </ion-item>
+      <ion-item>
+        <ion-label postition="stacked">Phone Number</ion-label>
+        <ion-input
+          type="number"
+          clearInput
+          formControlName="phoneNumber"
+        ></ion-input>
+      </ion-item>
 
-    <ion-item>
-      <ion-label postition="stacked">Departure Date</ion-label>
-      <ion-datetime display-format="MM/DD/YYYY"></ion-datetime>
-    </ion-item>
+      <ion-item>
+        <ion-label postition="stacked">Departure Date</ion-label>
+        <ion-datetime
+          display-format="MM/DD/YYYY"
+          formControlName="departure"
+        ></ion-datetime>
+      </ion-item>
 
-    <ion-item>
-      <ion-label postition="stacked">Notes</ion-label>
-      <ion-textarea [autoGrow]="true" rows="10" type="text"></ion-textarea>
-    </ion-item>
-  </ion-list>
+      <ion-item>
+        <ion-label postition="stacked">Notes</ion-label>
+        <ion-textarea
+          [autoGrow]="true"
+          rows="10"
+          type="text"
+          formControlName="notes"
+        ></ion-textarea>
+      </ion-item>
+    </ion-list>
+  </form>
 </ion-content>
