@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -11,10 +11,10 @@ import { CampDetailsPage } from './camp-details.page';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     IonicModule,
-    CampDetailsPageRoutingModule
+    CampDetailsPageRoutingModule,
   ],
-  declarations: [CampDetailsPage]
+  declarations: [CampDetailsPage],
 })
 export class CampDetailsPageModule {}

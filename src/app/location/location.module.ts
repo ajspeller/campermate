@@ -7,14 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { LocationPageRoutingModule } from './location-routing.module';
 
 import { LocationPage } from './location.page';
+import { GoogleMapComponent } from '../components/google-map/google-map.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    LocationPageRoutingModule
-  ],
-  declarations: [LocationPage]
+  imports: [CommonModule, FormsModule, IonicModule, LocationPageRoutingModule],
+  declarations: [LocationPage, GoogleMapComponent],
 })
 export class LocationPageModule {}

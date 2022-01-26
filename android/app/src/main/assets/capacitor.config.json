@@ -1,0 +1,6 @@
+{
+	"appId": "com.certifyyaself.campmate",
+	"appName": "campermate",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
